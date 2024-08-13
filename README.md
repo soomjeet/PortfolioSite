@@ -4,7 +4,7 @@ This repository contains the source code for my personal portfolio website. The 
 
 Hosted on Salesforce Experience Cloud using Lightning Web Runtime(LWR) template for faster rendering.
 
-[Link To Site](https://sspeed-dev-ed.my.site.com/soomjeetportfolio/){:target="_blank" rel="noopener"}
+[Link To Site](https://sspeed-dev-ed.my.site.com/soomjeetportfolio/)
 
 ## Technologies Used
 
