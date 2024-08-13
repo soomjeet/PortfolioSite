@@ -1,0 +1,7 @@
+@import "c/ppCSSLibrary";
+
+.experience-content-background-color-class {
+  background-color: var(
+    --lwc-profile-info-experience-section-sub-header-background-color
+  );
+}

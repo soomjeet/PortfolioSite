@@ -1,0 +1,27 @@
+/* @import "c/ppCSSLibrary"; */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.profile-image {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Add other styles for profile details as needed */
+.profile-details {
+    /* Add styles for profile details */
+}

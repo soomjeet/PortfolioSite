@@ -1,0 +1,25 @@
+@import "c/ppCSSLibrary";
+
+:host {
+  --slds-c-pill-radius-border: 1rem;
+  /* --slds-c-pill-spacing-block-end : 0.25rem; */
+  /* --slds-c-pill-container-spacing-block-end : 0.25rem; */
+  /* --slds-c-pill-line-height: 2; */
+}
+
+.pill-props {
+  --slds-c-pill-color-background: var(
+    --lwc-pill-background-color,
+    var(--lwc-background-colour)
+  );
+
+  --slds-c-pill-color-border: var(
+    --lwc-pill-border-color,
+    var(--lwc-background-colour)
+  );
+}
+
+.pill-label-prop {
+  display: inline-block;
+  color: var(--lwc-pill-text-color, var(--lwc-overview-tint-colour));
+}

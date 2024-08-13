@@ -1,0 +1,11 @@
+<template>
+    <lightning-layout multiple-rows>
+    <template if:true={_skillRecords} for:each={_skillRecords} for:item="skill" for:index="index">        
+            <lightning-layout-item size="4" padding="around-small" key={skill.id}>
+                <c-pp-skill-progress-bar-component
+                progress-bar-pill-data={skill}
+                ></c-pp-skill-progress-bar-component>
+            </lightning-layout-item>
+        </template>
+    </lightning-layout>
+</template>

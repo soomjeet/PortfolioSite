@@ -1,0 +1,31 @@
+<template>
+  <template
+    if:true={_experienceRecords}
+    for:each={_experienceRecords}
+    for:item="exp"
+    for:index="idx"
+  >
+    <!-- -->
+    <c-pp-page-header-component-with-named-slots
+      key={exp.id}
+      container-id={exp.id}
+    >
+      <span slot="headerPageIconImageSlot">
+        <img
+          src={exp.displayImagePath}
+          alt={exp.name}
+          class="icon-img-container"
+        />
+      </span>
+      <span slot="headerPageTitleSlot">{exp.name}</span>
+      <span slot="headerPageSubTitleSlot"
+        >{exp.roleName} • {exp.formattedExpRange}</span
+      >
+      <span slot="headerPageDescriptionSlot">
+        <c-pp-rich-text-area-field-read-only
+          html-text-area-content={exp.workDescription}
+        ></c-pp-rich-text-area-field-read-only>
+      </span>
+    </c-pp-page-header-component-with-named-slots>
+  </template>
+</template>

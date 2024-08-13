@@ -1,0 +1,30 @@
+@import "c/ppCSSLibrary";
+
+:host {
+  --lwc-borderWidthThin: 1px;
+  --lwc-borderRadiusMedium: 0.25rem;
+}
+/* .img-container {
+    width: 45px;
+    height: 45px;
+} */
+
+.borderClass {
+  border: var(--lwc-borderWidthThin) solid
+    var(--slds-g-color-border-base-1, #c9c9c9);
+  border-radius: var(--lwc-borderRadiusMedium, 0.25rem);
+  border-bottom: var(--lwc-borderWidthThin) solid
+    var(--slds-g-color-border-base-1, #c9c9c9);
+
+  --slds-c-card-color-background: var(--lwc-background-colour);
+  --slds-c-card-text-color: var(--lwc-overview-tint-colour);
+}
+
+.card-props {
+  background-color: var(--lwc-background-colour);
+  color: var(--lwc-overview-tint-colour);
+}
+
+.htmlContentBoxHeightClass {
+  min-height: fit-content;
+}

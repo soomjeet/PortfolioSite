@@ -1,0 +1,12 @@
+<template>
+  <span class="slds-pill slds-pill_link pill-props">
+    <span class="slds-pill__icon_container">
+      <span class="slds-avatar slds-avatar_circle" title={_element.name}>
+        <slot name="pillImage"></slot>
+      </span>
+    </span>
+    <a class="slds-pill__action" title={_element.name}>
+      <slot name="pillLabel" class="pill-label-prop"></slot>
+    </a>
+  </span>
+</template>

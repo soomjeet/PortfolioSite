@@ -1,0 +1,45 @@
+<template>
+  <c-pp-page-header-component-with-named-slots
+    container-id="certificationComponent"
+  >
+    <span slot="headerPageIconImageSlot">
+      <lightning-icon
+        icon-name="doctype:image"
+        alternative-text="Doc image"
+        class="icon-img-container"
+      ></lightning-icon>
+    </span>
+    <span slot="headerPageTitleSlot">Certifications</span>
+    <span slot="headerPageSubTitleSlot">{_certificationRecordsSize}</span>
+    <span slot="headerPageDescriptionSlot">
+      <div class="slds-card slds-var-p-around_small">
+        <lightning-layout multiple-rows>
+          <template
+            if:true={_certificationRecords}
+            for:each={_certificationRecords}
+            for:item="cert"
+            for:index="index"
+          >
+            <lightning-layout-item
+              size={cert.desktopDisplaySize}
+              key={cert.id}
+              class="slds-var-p-top_xx-small slds-var-p-bottom_xx-small"
+            >
+              <c-pp-certifications-component-pill element={cert}>
+                <span slot="pillImage">
+                  <img
+                    alt={cert.name}
+                    src={cert.displayImagePath}
+                    title={cert.name}
+                    class="small-icon-img-container"
+                  />
+                </span>
+                <span slot="pillLabel">{cert.name}</span>
+              </c-pp-certifications-component-pill>
+            </lightning-layout-item>
+          </template>
+        </lightning-layout>
+      </div>
+    </span>
+  </c-pp-page-header-component-with-named-slots>
+</template>

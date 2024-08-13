@@ -1,0 +1,60 @@
+:host {
+  --lwc-overview-tint-colour: #1b96ff;
+  --lwc-background-colour: black;
+}
+
+.card-header-class {
+  --slds-c-card-color-background: var(--lwc-background-colour);
+}
+
+.image-prop-class {
+  height: 180px;
+  width: 150px;
+}
+
+.content-header-class {
+  font-weight: var(--lwc-fontWeightBold);
+  font-size: 1.8rem;
+  font-family: var(--lwc-fontFamily);
+}
+
+.content-sub-header-class {
+  font-weight: var(--lwc-fontWeightRegular);
+  font-size: 0.8rem;
+  font-family: var(--lwc-fontFamily);
+}
+
+.text-class {
+  color: var(--lwc-overview-tint-colour);
+}
+
+/* .card-header-class .slds-card__header {
+  padding-top: unset !important;
+} */
+.icon-color-class {
+  --slds-c-icon-color-foreground-default: var(--lwc-overview-tint-colour);
+}
+/* 
+.icon-class:hover {
+  fill: gray;
+} */
+
+.footer-signature {
+  font-size: smaller;
+  color: grey;
+  font-style: italic;
+}
+
+.download-btn-config-base-class {
+  --slds-c-button-color-background: #1b96ff;
+  --slds-c-button-text-color: var(--lwc-background-colour);
+
+  /* --slds-c-button-text-color-hover: #ffffff; */
+  /* --slds-c-button-text-color-active: #ffffff; */
+}
+
+.download-btn-menu-config-class {
+  --slds-c-button-color-background: #1b96ff;
+  --slds-c-button-color-background-active: #1b96ff;
+  --slds-c-button-color-background-hover: #1b96ff;
+}

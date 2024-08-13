@@ -1,0 +1,38 @@
+<template>
+  <div
+    class="slds-card slds-card__body slds-card__body_inner profile-info-card-class"
+  >
+    <lightning-accordion
+      allow-multiple-sections-open
+      active-section-name={activeSections}
+      class="accordion-prop-class"
+    >
+      <!--Summary Section-->
+      <lightning-accordion-section name="summary_section" label="Summary">
+        <div class="text-class">{label.SUMMARY_LABEL}</div>
+      </lightning-accordion-section>
+
+      <!-- Experience Section-->
+      <lightning-accordion-section name="experience_section" label="Experience">
+        <lightning-layout multiple-rows="true">
+          <lightning-layout-item size="6" padding="around-small">
+            <c-pp-experience-component
+              experience-records={experiences}
+            ></c-pp-experience-component>
+          </lightning-layout-item>
+
+          <lightning-layout-item size="6" padding="around-small">
+            <c-pp-certifications-component
+              certification-records={certifications}
+            ></c-pp-certifications-component>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-accordion-section>
+
+      <!-- Skill Section-->
+      <lightning-accordion-section name="skills_section" label="Skills">
+        <c-pp-skill-component skill-records={skills}></c-pp-skill-component>
+      </lightning-accordion-section>
+    </lightning-accordion>
+  </div>
+</template>

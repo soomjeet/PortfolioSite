@@ -1,0 +1,166 @@
+<template>
+  <lightning-card variant="Narrow" class="card-header-class">
+    <lightning-layout multiple-rows>
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-around_medium slds-align_absolute-center"
+      >
+        <img src={profileImageUrl} alt="Profile" class="image-prop-class" />
+      </lightning-layout-item>
+
+      <lightning-layout-item
+        size="12"
+        class="slds-var-p-around_medium slds-align_absolute-center"
+      >
+        <div>
+          <div class="text-class content-header-class">Soomjeet Sahoo</div>
+
+          <div
+            class="text-class content-sub-header-class slds-align_absolute-center"
+          >
+            <lightning-icon
+              icon-name="utility:profile"
+              alternative-text="profile"
+              size="x-small"
+              title="profile"
+              class="icon-color-class"
+            ></lightning-icon>
+            &nbsp; Salesforce Developer
+          </div>
+          <div
+            class="text-class content-sub-header-class slds-align_absolute-center"
+          >
+            <lightning-icon
+              icon-name="utility:location"
+              alternative-text="location"
+              size="x-small"
+              title="location"
+              class="icon-color-class"
+            ></lightning-icon>
+            &nbsp; Hyderabad, India
+          </div>
+          <div
+            class="text-class content-sub-header-class slds-align_absolute-center"
+          >
+            <lightning-icon
+              icon-name="utility:email"
+              alternative-text="email"
+              size="x-small"
+              title="email"
+              class="icon-color-class"
+            ></lightning-icon>
+            &nbsp;
+            <a href="mailto:johndoe@example.com">soomjeet.sahoo@gmail.com</a>
+          </div>
+        </div>
+      </lightning-layout-item>
+
+      <lightning-layout-item size="12" class="">
+        <!-- social handles -->
+        <lightning-layout horizontal-align="spread" multiple-rows>
+          <lightning-layout-item size="2.4" padding="around-small">
+            <lightning-icon
+              data-key="linkedIn"
+              onmouseover={handleMouseHoverOnIcons}
+              onmouseleave={handleMouseLeaveOnIcons}
+              onclick={handleButtonIconClick}
+              src={linkedInSVG}
+              size="medium"
+              class="icon-class"
+              >LinkedIn</lightning-icon
+            >
+          </lightning-layout-item>
+          <lightning-layout-item size="2.4" padding="around-small">
+            <lightning-icon
+              data-key="medium"
+              onmouseover={handleMouseHoverOnIcons}
+              onmouseleave={handleMouseLeaveOnIcons}
+              onclick={handleButtonIconClick}
+              src={mediumSVG}
+              size="medium"
+              class="icon-class"
+              >Medium</lightning-icon
+            >
+          </lightning-layout-item>
+          <lightning-layout-item size="2.4" padding="around-small">
+            <lightning-icon
+              data-key="twitter"
+              onmouseover={handleMouseHoverOnIcons}
+              onmouseleave={handleMouseLeaveOnIcons}
+              onclick={handleButtonIconClick}
+              src={twitterSVG}
+              size="medium"
+              class="icon-class"
+              >Twitter</lightning-icon
+            >
+          </lightning-layout-item>
+          <lightning-layout-item size="2.4" padding="around-small">
+            <lightning-icon
+              data-key="gmail"
+              onmouseover={handleMouseHoverOnIcons}
+              onmouseleave={handleMouseLeaveOnIcons}
+              onclick={handleButtonIconClick}
+              src={gMailSVG}
+              size="medium"
+              class="icon-class"
+              >Gmail</lightning-icon
+            >
+          </lightning-layout-item>
+          <lightning-layout-item size="2.4" padding="around-small">
+            <lightning-icon
+              data-key="github"
+              onmouseover={handleMouseHoverOnIcons}
+              onmouseleave={handleMouseLeaveOnIcons}
+              onclick={handleButtonIconClick}
+              src={githubSVG}
+              size="medium"
+              class="icon-class"
+              >Github</lightning-icon
+            >
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+    </lightning-layout>
+    <div slot="footer">
+      <lightning-button-group>
+        <lightning-button
+          data-format="pdf"
+          label="Download Resume (.pdf)"
+          variant="brand"
+          icon-name="action:download"
+          icon-position="left"
+          class="download-btn-config-base-class"
+          onclick={handleViewOrDownloadResumeClick}
+        ></lightning-button>
+        <lightning-button-menu
+          alternative-text="Show menu"
+          variant="container"
+          class="download-btn-menu-config-class"
+        >
+          <lightning-menu-item
+            data-format="docx"
+            label="Download as Word Doc"
+            value="downloadWord"
+            icon-name="doctype:word"
+            icon-position="left"
+            variant="brand"
+            onclick={handleViewOrDownloadResumeClick}
+          ></lightning-menu-item>
+          <lightning-menu-item
+            data-format="view"
+            label="View Resume"
+            value="view"
+            icon-name="action:preview"
+            icon-position="left"
+            variant="brand"
+            onclick={handleViewOrDownloadResumeClick}
+          ></lightning-menu-item>
+        </lightning-button-menu>
+      </lightning-button-group>
+      <br />
+      <div class="text-class footer-signature">
+        ⚡built using LWC powered by Lightning Web Runtime
+      </div>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+.banner {
+    background-color: #3498db; /* Change the background color */
+    color: #fff; /* Change the text color */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Responsive styles for larger screens */
+@media only screen and (min-width: 768px) {
+    .banner {
+        font-size: 18px; /* Adjust the font size for larger screens */
+    }
+}

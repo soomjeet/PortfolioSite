@@ -1,0 +1,15 @@
+<template>
+  <div class="flex-container">
+    <div class="flex-child" if:true={skillRatingValue}>
+      <div class="progressbar-props">
+        {_progressBarPillData.skillName} •
+        ({_progressBarPillData.skillRating}/10)
+      </div>
+      <lightning-progress-bar
+        value={skillRatingValue}
+        size="large"
+        variant="circular"
+      ></lightning-progress-bar>
+    </div>
+  </div>
+</template>

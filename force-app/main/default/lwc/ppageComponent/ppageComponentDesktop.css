@@ -1,0 +1,30 @@
+@import "c/ppCSSLibrary";
+
+.h1 {
+  color: aliceblue;
+}
+
+.accordion-prop-class {
+  --slds-c-accordion-summary-color-background: var(
+    --lwc-profile-info-accordion-background-tint
+  );
+
+  --slds-c-accordion-color-border: var(
+    --lwc-profile-info-accordion-border-tint,
+    var(--lwc-background-colour)
+  );
+
+  --sds-c-accordion-heading-text-color: var(
+    --lwc-profile-info-accordion-heading-text-color,
+    var(--lwc-overview-tint-colour)
+  );
+
+  /* --slds-c-icon-color-foreground: var(
+    --lwc-profile-info-accordion-heading-text-color,
+    var(--lwc-overview-tint-colour)
+  ); */
+}
+
+.profile-info-card-class {
+  --slds-c-card-color-background: var(--lwc-background-colour);
+}
