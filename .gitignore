@@ -54,3 +54,7 @@ cert/
 triggers/
 manifest/
 scripts/
+
+#classes
+force-app\main\default\classes\UserTriggerHandler.cls
+force-app\main\default\classes\UserTriggerHandler.cls-meta.xml
